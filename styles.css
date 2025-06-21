@@ -5,7 +5,7 @@
   --white: #ffffff;
   --green: #c4f82a;
 
-  --container-width: 21.875rem;
+  --container-width: 24rem;
   --avatar-size: 7.5rem;
   --card-padding-y: 1.6rem;
   --card-padding-x: 2.6rem;
@@ -21,14 +21,15 @@
 body {
   font-family: "Inter", sans-serif;
   margin: 0;
-  padding: clamp(5rem, 15vh, 10rem) 1rem;
+  padding: clamp(5rem, 5vh, 1rem) 1rem;
   background-color: var(--grey-900);
   color: var(--white);
   box-sizing: border-box;
-  min-height: 100vh;
+  min-height: 100dvh;
   display: flex;
-  flex-direction: column;
   justify-content: center;
+  align-items: flex-start;
+  overflow-y: hidden;
 }
 
 .social-links-card {
@@ -37,7 +38,8 @@ body {
   text-align: center;
   padding: var(--card-padding-y) var(--card-padding-x);
   border-radius: var(--border-radius);
-  margin: auto auto;
+  min-height: 579px;
+  height: auto;
 }
 
 .social-links-card img {
@@ -88,7 +90,7 @@ li {
   background-color: var(--grey-700);
   margin-bottom: var(--li-margin-bottom);
   padding: var(--li-padding-y) 0;
-  border-radius: 0.625rem; /* kept rounded value */
+  border-radius: 0.625rem;
 }
 
 li:nth-child(5) {
